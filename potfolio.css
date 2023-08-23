@@ -11,9 +11,18 @@ img{ vertical-align: bottom; }
 ul, li{ padding: 0; margin: 0; list-style: none; }
 .tit{ font-size: 27px;  font-weight: 600; }
 
+.snslink{
+    padding-top: 2%;
+}
+.snslink a{
+    padding-right: 20px;
+}
 /*My Timeline*/
 .Timeline{
      padding-top: 7%;   
+}
+.Timeline .tit{
+    text-align: center;
 }
 .Timeline .Timeline_contant{ 
     margin-top: 5%;
@@ -38,6 +47,21 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.career{
+    padding-top: 2%;
+}
+
+.career .title{
+    font-size: 16px;
+    padding-top: 28px;
+    padding-bottom: 15px;
+}
+.career p{
+    padding-top: 7px;
+}
+.career span{
+    padding-right: 20px;
+}
 
 /*projectIntro*/
 .projectIntro .project_info{
@@ -45,12 +69,12 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     gap: 21px;
 }
 .projectIntro .project_info{
-    margin-top: 5%;
+    margin-top: 4%;
 }
 .projectIntro .project_info > div{
     flex: 1;
 }
-.project_info .info_tit {
+.projectIntro .info_tit {
     font-weight: 600;
     font-size: 16px;
     padding-bottom: 6%;
@@ -59,6 +83,12 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     font-weight: 600;
     display: inline-block;
     padding-bottom: 8px;
+}
+.infoLink{
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 4%;
+    padding-bottom: 13px;
 }
 
 /*project*/
@@ -73,6 +103,36 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 .project .project_img img{
     width: 100%;
 }
+.projectIntro .keywardIntro{
+    margin-top: 5%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.projectIntro .keywardIntro span{
+    font-size: 19px;
+}
+.projectIntro .keywardIntro .context{
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+/*blog*/
+.blogTit{
+    font-size: 23px;
+    margin-bottom: 2%;
+}
+.blog ul{
+    margin-top: 1%;
+}
+.blog li{
+    font-size: 17px;
+    padding-bottom: 16px;
+}
+.blog .title{
+    font-weight: 600;
+    margin-top: 2%;
+}
+
 
 /*mySkil*/
 .mySkil .mySkil_tit{
@@ -121,6 +181,47 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 .chart #myChart{
     margin-top: 5%;
 }
+.chart p{
+    margin-top: 10px;
+}
+.chart .poii{
+    margin-top: 20px;
+}
+.poi{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+
+/*myIntro*/
+.myIntro{
+    padding-bottom: 8%;    
+}
+.myIntro .tit{
+    padding-bottom: 22px;    
+}
+.myIntro .intro1{
+    margin-bottom: 4%;
+}
+.myIntro p{
+    line-height: 29px;
+    font-size: 17px;
+}
+.myIntro p .title{
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+.myIntro p .point{
+    display: inline-block;
+    font-weight: 600;
+}
+.myIntro .link{
+    padding-top: 35px;
+}
+.myIntro .link a{
+    padding-right: 20px;
+}
 
 /*미디어쿼리*/
 @media (min-width: 767px){
@@ -132,7 +233,7 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
         font-size: 33px;
     }
     /*Timeline*/
-    .Timeline > div {
+    .Timeline .Timeline_contant{
         display: flex;
         justify-content: center;
     }
@@ -157,6 +258,14 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
         flex: 1.3;
     }
     
+    /*blog*/
+    .blog .linkListk{
+        display: flex;
+        
+    }
+    .blog .linkListk ul{
+        flex: 1;
+    }
     /*point 슬라이드*/
     .bx-wrapper{
         max-width: 1200px !important;
@@ -164,4 +273,10 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
         margin-top: 4%;
     }
     
+    /*myIntro*/
+    .myIntro .intro1{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 4%;
+}
 }

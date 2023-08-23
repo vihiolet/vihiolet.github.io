@@ -1,51 +1,125 @@
 /*공통 css*/
 *{ padding: 0; margin: 0; font-family: 'Gowun Dodum', sans-serif;}
 html, body{ width: 100%; font-size: 15px; }
-section{ width: 80%; padding: 10%;}
+section{ width: 80%; padding: 11% 10% 0 10%;}
 h2{ margin-bottom: 5%;}
 /*엘리먼트 초기화*/
 a{ color: inherit; text-decoration: none; }
 p{margin: 0;}
 input {box-sizing: border-box;}
-img{ width: 100%; vertical-align: bottom; }
+img{ vertical-align: bottom; }
 ul, li{ padding: 0; margin: 0; list-style: none; }
-
+.tit{ font-size: 27px;  font-weight: 600; }
 
 /*My Timeline*/
-.Timeline h2{ 
-    text-align: center;  
+.Timeline{
+     padding-top: 7%;   
+}
+.Timeline .Timeline_contant{ 
+    margin-top: 5%;
 }
 .time{
     width: 100%;
     text-align: center; 
-    margin-bottom: 4%;
 }
-.time .time1_img{
-    width: 100px;
+.time .time_tit{
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+.time .year{
+    width: 200px;
     display: inline-block;
-    height: 130px;
-    background: #222;
+    line-height: 40px;
+    border: 1px solid #222;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-/*My potfolio*/
-.pofol_tit{
+
+/*projectIntro*/
+.projectIntro .project_info{
     display: flex;
+    gap: 21px;
 }
-.Pofol .page{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+.projectIntro .project_info{
+    margin-top: 5%;
 }
-.Pofol .page li{
+.projectIntro .project_info > div{
     flex: 1;
 }
-.Pofol .page .page_img{
-    height: 220px;
-    background: #222;
+.project_info .info_tit {
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 6%;
 }
-.Pofol .Pofol_link{
-    border: 1px solid #e4e4e4;
+.project_info span{
+    font-weight: 600;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/*project*/
+.project .project_tit{
+    display: flex;
+}
+.project .project_img{
     width: 100%;
-    height: 220px;
+    text-align: center;
+    margin-top: 5%;
+}
+.project .project_img img{
+    width: 100%;
+}
+
+/*mySkil*/
+.mySkil .mySkil_tit{
+    display: flex;
+}
+.mySkil .skilList{
+    display: flex;
+    margin-top: 5%;
+}
+.mySkil .skilList ul{
+    flex: 1;
+}
+.mySkil .skilList ul li{
+    display: flex;
+    justify-content: center;
+    line-height: 90px;
+    font-size: 17px;
+}
+.mySkil .skilList ul li img{
+    width: 90px;
+}
+
+ /*point*/
+.point .tit{
+    padding-bottom: 5%;   
+}
+.point .point_contant li:not(:last-child){
+    padding-bottom: 5%;
+}
+.point .point_contant span{
+    font-weight: 600;
+    display: block;
+}
+.point .point_contant p{
+    margin-top: 7px;
+}
+
+/*point 슬라이드*/
+.bx-wrapper{    
+    margin: 10%;
+}
+
+/*point1*/
+
+/*chart*/
+.chart #myChart{
+    margin-top: 5%;
 }
 
 /*미디어쿼리*/
@@ -54,17 +128,40 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
         width: 1200px;  
         margin: 0 auto;
     }
-    /*My Timeline*/
+    .tit{
+        font-size: 33px;
+    }
+    /*Timeline*/
     .Timeline > div {
         display: flex;
         justify-content: center;
     }
-    /*My potfolio*/
-    .Pofol .Pofol_info{
-        display: flex;
+    
+    /*project*/
+    .project_tit .tit{
+        flex: 0.8;
+    } .project_tit h4{
+        flex: 1.2;
     }
     
-    .Pofol .Pofol_info .left_page{
-        margin-right: 15px;
+    /*mySkil*/
+    
+    /*point*/
+    .point{
+        display: flex;
     }
+    .point .tit{
+        flex: 0.7;
+    }
+    .point .point_contant{
+        flex: 1.3;
+    }
+    
+    /*point 슬라이드*/
+    .bx-wrapper{
+        max-width: 1200px !important;
+        margin: 0 auto;
+        margin-top: 4%;
+    }
+    
 }

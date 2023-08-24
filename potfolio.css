@@ -90,6 +90,11 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     margin-top: 4%;
     padding-bottom: 13px;
 }
+.infoLink span{
+    font-size: 15px;
+    font-weight: 500;
+    color: #888;
+}
 
 /*project*/
 .project .project_tit{

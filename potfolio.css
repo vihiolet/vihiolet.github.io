@@ -90,6 +90,11 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     margin-top: 4%;
     padding-bottom: 13px;
 }
+.infoLink span{
+    font-size: 15px;
+    font-weight: 500;
+    color: #888;
+}
 
 /*project*/
 .project .project_tit{
@@ -124,13 +129,14 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 .blog ul{
     margin-top: 1%;
 }
-.blog li{
-    font-size: 17px;
+.blog li{    
     padding-bottom: 16px;
 }
 .blog .title{
     font-weight: 600;
     margin-top: 2%;
+    padding-bottom: 13px;
+    font-size: 17px;
 }
 
 
@@ -251,7 +257,7 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     .point{
         display: flex;
     }
-    .point .tit{
+    .point .point_title{
         flex: 0.7;
     }
     .point .point_contant{

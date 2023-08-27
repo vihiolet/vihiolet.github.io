@@ -1,7 +1,7 @@
 /*공통 css*/
 *{ padding: 0; margin: 0; font-family: 'Gowun Dodum', sans-serif;}
 html, body{ width: 100%; font-size: 15px; }
-section{ width: 80%; padding: 11% 10% 0 10%;}
+section{ width: 80%; padding: 10% 10% 0 10%;}
 h2{ margin-bottom: 5%;}
 /*엘리먼트 초기화*/
 a{ color: inherit; text-decoration: none; }
@@ -94,6 +94,24 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     font-size: 15px;
     font-weight: 500;
     color: #888;
+}
+
+/*part*/
+.part ul li{
+    padding-top: 5%;   
+    padding-bottom: 6%;
+}
+.part ul li:not(:first-child){
+    border-top: 1px solid #ccc;
+}
+.projectLink {
+    display: flex;
+}
+.projectLink > div{
+    padding-right: 65px;
+}
+.projectLink .infoLink{
+    margin-top: 0;
 }
 
 /*project*/

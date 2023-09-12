@@ -1,25 +1,57 @@
 /*공통 css*/
-*{ padding: 0; margin: 0; font-family: 'Gowun Dodum', sans-serif;}
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{ padding: 0; margin: 0;     font-family: 'SUIT-Regular'; }
 html, body{ width: 100%; font-size: 15px; }
-section{ width: 80%; padding: 10% 10% 0 10%;}
+section{ width: 80%; padding: 5% 10% 5% 10%;}
+.container{
+    background: #fff;
+    padding: 5% 7%;    
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px #ddddddad;
+}
 h2{ margin-bottom: 5%;}
 /*엘리먼트 초기화*/
-a{ color: inherit; text-decoration: none; }
+a{ color: inherit; text-decoration: none; font-weight: 600;}
 p{margin: 0;}
 input {box-sizing: border-box;}
 img{ vertical-align: bottom; }
 ul, li{ padding: 0; margin: 0; list-style: none; }
-.tit{ font-size: 27px;  font-weight: 600; }
+.tit{ font-size: 27px;  font-weight: 600; font-family: 'Cafe24Supermagic-Bold-v1.0';}
+
+/*링크 폰트 색깔 에니메이션*/
+.linkani{
+    animation: link 4s infinite;
+}
+@keyframes link{
+     25% {color: tomato;}
+     50% {color: #6239c3;}
+     75% {color: #222;}
+}
+/*공통 설정 끝*/
 
 .snslink{
     padding-top: 2%;
+    padding-bottom: 2%;
 }
 .snslink a{
     padding-right: 20px;
+    font-size: 16px;
 }
+
 /*My Timeline*/
-.Timeline{
-     padding-top: 7%;   
+.Timeline{  
+    background: #27005D;
 }
 .Timeline .tit{
     text-align: center;
@@ -32,8 +64,7 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     text-align: center; 
 }
 .time .time_tit{
-    font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 4%;
     padding-top: 4%;
 }
@@ -42,10 +73,15 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     display: inline-block;
     line-height: 40px;
     border: 1px solid #222;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.area{    
+    font-weight: 600;
+    color: #27005D;
+    font-size: 17px;
 }
 .career{
     padding-top: 2%;
@@ -64,6 +100,10 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 }
 
 /*projectIntro*/
+.projectIntro{
+    background: #6239c3;
+}
+
 .projectIntro .project_info{
     display: flex;
     gap: 21px;
@@ -83,6 +123,7 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     font-weight: 600;
     display: inline-block;
     padding-bottom: 8px;
+    color: #6239c3;
 }
 .infoLink{
     font-weight: 600;
@@ -97,6 +138,10 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 }
 
 /*part*/
+.part{
+    background: #AED2FF;
+}
+
 .part ul li{
     padding-top: 5%;   
     padding-bottom: 6%;
@@ -115,6 +160,10 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 }
 
 /*project*/
+.project{
+    background: #E4F1FF;
+}
+
 .project .project_tit{
     display: flex;
 }
@@ -128,37 +177,22 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 }
 .projectIntro .keywardIntro{
     margin-top: 5%;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 16px;    
 }
 .projectIntro .keywardIntro span{
-    font-size: 19px;
+    font-size: 17px;
+    color: #6239c3;
+    font-weight: 600;
 }
 .projectIntro .keywardIntro .context{
     line-height: 26px;
     margin-top: 10px;
 }
 
-/*blog*/
-.blogTit{
-    font-size: 23px;
-    margin-bottom: 2%;
-}
-.blog ul{
-    margin-top: 1%;
-}
-.blog li{    
-    padding-bottom: 16px;
-}
-.blog .title{
-    font-weight: 600;
-    margin-top: 2%;
-    padding-bottom: 13px;
-    font-size: 17px;
-}
-
-
 /*mySkil*/
+.mySkil{
+    background: #ACBCFF;
+}
 .mySkil .mySkil_tit{
     display: flex;
 }
@@ -180,6 +214,10 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 }
 
  /*point*/
+.point{
+    background: #B799FF;
+}
+
 .point .tit{
     padding-bottom: 5%;   
 }
@@ -189,19 +227,55 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 .point .point_contant span{
     font-weight: 600;
     display: block;
+    color: #9063fb;
 }
 .point .point_contant p{
     margin-top: 7px;
 }
 
+/*point1*/
+.point1{
+    background: #B799FF;
+    padding-bottom: 60px;
+    padding-top: 0;
+}
+.point1 .tit{
+    padding-bottom: 4%;
+}
 /*point 슬라이드*/
 .bx-wrapper{    
-    margin: 10%;
+    margin-bottom: 0;
+    background: #B799FF !important;
 }
 
-/*point1*/
+/*blog*/
+.blog{
+    padding-top: 10%;
+}
+.blogTit{
+    font-size: 24px;
+    margin-bottom: 2%;
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+}
+.blog ul{
+    margin-top: 1%;
+}
+.blog li{    
+    padding-bottom: 16px;
+}
+.blog .title{
+    font-weight: 600;
+    margin-top: 2%;
+    padding-bottom: 13px;
+    font-size: 17px;    
+    color: #9063fb;
+}
 
 /*chart*/
+.chart{
+    background: #FFE5F1;
+}
+
 .chart #myChart{
     margin-top: 5%;
 }
@@ -215,11 +289,13 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     font-size: 16px;
     font-weight: 600;
     padding-left: 25px;
+    color: #fd92c4;
 }
 
 /*myIntro*/
 .myIntro{
     padding-bottom: 8%;    
+    background: #FFF8E1;
 }
 .myIntro .tit{
     padding-bottom: 22px;    
@@ -236,7 +312,7 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     padding-bottom: 20px;
     padding-top: 25px;
 }
-.myIntro p .point{
+.myIntro p .pointtex{
     display: inline-block;
     font-weight: 600;
 }
@@ -249,12 +325,12 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 
 /*미디어쿼리*/
 @media (min-width: 767px){
-    section{ 
+    .container{ 
         width: 1200px;  
         margin: 0 auto;
     }
     .tit{
-        font-size: 33px;
+        font-size: 36px;
     }
     /*Timeline*/
     .Timeline .Timeline_contant{
@@ -272,7 +348,7 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     /*mySkil*/
     
     /*point*/
-    .point{
+    .point .container{
         display: flex;
     }
     .point .point_title{
@@ -294,17 +370,12 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     .bx-wrapper{
         max-width: 1200px !important;
         margin: 0 auto;
-        margin-top: 4%;
     }
     
     /*myIntro*/
     .myIntro .intro1{
-    display: flex;
-    gap: 30px;
-    margin-bottom: 4%;
+        display: flex;
+        gap: 30px;
+        margin-bottom: 4%;
+    }
 }
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 6dea6ba3f2d418d115cb9754573ca7f070727527

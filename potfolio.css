@@ -34,9 +34,10 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     animation: link 4s infinite;
 }
 @keyframes link{
+    0% {color: #666;}
      25% {color: tomato;}
      50% {color: #6239c3;}
-     75% {color: #222;}
+     75% {color: #27005D;}
 }
 /*공통 설정 끝*/
 
@@ -83,6 +84,10 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     color: #27005D;
     font-size: 17px;
 }
+.area span{ 
+    border-bottom: 2px solid #27005d;
+    padding-bottom: 2px;
+}
 .career{
     padding-top: 2%;
 }
@@ -91,6 +96,8 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     font-size: 16px;
     padding-top: 28px;
     padding-bottom: 15px;
+    font-weight: 600;
+    color: #27005D;
 }
 .career p{
     padding-top: 7px;
@@ -228,6 +235,7 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     font-weight: 600;
     display: block;
     color: #9063fb;
+    font-size: 17px;
 }
 .point .point_contant p{
     margin-top: 7px;

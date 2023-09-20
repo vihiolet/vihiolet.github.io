@@ -25,7 +25,7 @@ h2{ margin-bottom: 5%;}
 a{ color: inherit; text-decoration: none; font-weight: 600;}
 p{margin: 0;}
 input {box-sizing: border-box;}
-img{  width: 100%; vertical-align: bottom; }
+img{  vertical-align: bottom; }
 ul, li{ padding: 0; margin: 0; list-style: none; }
 .tit{ font-size: 27px;  font-weight: 600; font-family: 'Cafe24Supermagic-Bold-v1.0';}
 
@@ -110,10 +110,28 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 .projectIntro{
     background: #6239c3;
 }
-
+.projectIntro .sub_tit{
+    padding-top: 5%;
+    font-size: 26px; 
+    font-weight: 600;
+    font-family: 'Cafe24Supermagic-Bold-v1.0';    
+}
+.projectIntro .sub_tit span{
+    display: inline-block;
+    font-size: 26px; 
+    font-weight: 600;
+    font-family: 'Cafe24Supermagic-Bold-v1.0';    
+    padding: 3px 10px;
+    background: #6239c3;
+    color: #f3efff;
+}
 .projectIntro .project_info{
     display: flex;
     gap: 21px;
+}
+.projectIntro .probo{
+    padding-bottom: 5%;
+    border-bottom: 1px solid #eee;
 }
 .projectIntro .project_info{
     margin-top: 4%;
@@ -142,6 +160,41 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     font-size: 15px;
     font-weight: 500;
     color: #888;
+}
+
+/*mySkil*/
+.mySkil{
+    margin-top: 5%;
+}
+.mySkil .mySkil_tit{
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 3%;
+}
+.skilList{
+    border: 1px solid #eee;
+    border-radius: 7px;
+    padding: 20px 0;
+    
+}
+.mySkil .mySkil_tit{
+    display: flex;
+}
+.mySkil .skilList{
+    display: flex;
+    
+}
+.mySkil .skilList ul{
+    flex: 1;
+}
+.mySkil .skilList ul li{
+    display: flex;
+    justify-content: center;
+    line-height: 90px;
+    font-size: 17px;
+}
+.mySkil .skilList ul li img{
+    width: 90px;
 }
 
 /*part*/
@@ -179,9 +232,6 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
     text-align: center;
     margin-top: 5%;
 }
-.project .project_img img{
-    width: 100%;
-}
 .projectIntro .keywardIntro{
     margin-top: 5%;
     font-size: 16px;    
@@ -194,30 +244,6 @@ ul, li{ padding: 0; margin: 0; list-style: none; }
 .projectIntro .keywardIntro .context{
     line-height: 26px;
     margin-top: 10px;
-}
-
-/*mySkil*/
-.mySkil{
-    background: #ACBCFF;
-}
-.mySkil .mySkil_tit{
-    display: flex;
-}
-.mySkil .skilList{
-    display: flex;
-    margin-top: 5%;
-}
-.mySkil .skilList ul{
-    flex: 1;
-}
-.mySkil .skilList ul li{
-    display: flex;
-    justify-content: center;
-    line-height: 90px;
-    font-size: 17px;
-}
-.mySkil .skilList ul li img{
-    width: 90px;
 }
 
  /*point*/
